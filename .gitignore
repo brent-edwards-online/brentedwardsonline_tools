@@ -1,0 +1,3 @@
+#gitignore for brentedwardsonline_tools
+build/dist/
+SSH/
