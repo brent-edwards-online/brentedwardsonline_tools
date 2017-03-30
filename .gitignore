@@ -1,3 +1,4 @@
 #gitignore for brentedwardsonline_tools
-build/dist/
+build/
 SSH/
+accesskeys/
