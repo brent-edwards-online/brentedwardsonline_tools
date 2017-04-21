@@ -29,13 +29,14 @@ popd
 echo "Adding Php Api" 
 mydelay 5
 cp -r ../../brentedwardsonline_phpapi/api/ dist/
+cp ./.htaccess dist/
 rm dist/api/includes/config_to_save.php
 
 echo "Zipping Files" 
 mydelay 5
 DATE_STRING="`date +%Y%m%d_%H%M%S`"
 pushd dist/
-zip -r "../beol_ng2_$DATE_STRING.zip" ./*
+zip -r "../beol_ng2_$DATE_STRING.zip" ./* ./.htaccess
 popd
 echo ""
 echo "  Finished Building BrentEdwardsOnline Angular2" 
